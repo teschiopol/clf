@@ -82,6 +82,10 @@ Per farlo lavoreremo sulle stringhe intermedie generate ad ogni derivazione. Qui
 Nuova notazione (r, u) $\in$ $\delta$(q, a, s)
 Siamo nello stato q, leggiamo a dal input, s è nella cima della pila. Andremo allo stato r e nella pila sostituiremo s con u.
 
+Nel diagramma del PDA avremo stato q<sub>start</sub> con inserimento di \$.
+Lettura variabile iniziale.
+Stato q<sub>loop</sub> con le regole per i terminali e sostituzione parte destra per le variabili.
+Stato q<sub>accept</sub> quando leggo il $ dalla pila e sono quindi vuoto.
 ___
 
 Se un linguaggio è riconosciuto da un automa a pila, allora è context-free.
