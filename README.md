@@ -116,3 +116,11 @@ Se A è linguaggio context-free, allora esiste un numero p tale che, se s è una
 1) per ogni i >= 0, uv<sup>i</sup>xy<sup>i</sup>z $\in$ A
 2) |vy| > 0
 3) |vxy| <= p
+
+Alcuni linguaggi non context-free:
+
+- a<sup>n</sup>b<sup>n</sup>c<sup>n</sup>  | n >= 0 -> pumping up
+- a<sup>i</sup>b<sup>j</sup>c<sup>k</sup> | 0 <= i <= j <= k -> pumping up e pumping down
+- ww | w $\in$ {0, 1}<sup>*</sup> -> usando 0<sup>p</sup>1<sup>p</sup>0<sup>p</sup>1<sup>p</sup>
+
+## Cap 3 - La tesi di Church-Turing
