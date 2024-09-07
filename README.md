@@ -36,3 +36,28 @@ Per ottenerla:
 - Eliminiamo le regole unitarie A -> B, poi aggiungiamo A -> u per la regola B -> u, dove u è una stringa di variabili e terminali
 - Rimpiazziamo le regole A->u<sub>1</sub>u<sub>2</sub>u<sub>3</sub> in poi con A->u<sub>1</sub>A<sub>1</sub> e A<sub>1</sub>->u<sub>2</sub>A<sub>2</sub> e A<sub>2</sub> -> u<sub>3</sub>.
 - Infine convertimo le u<sub>i</sub> che sono terminali con una nuova regola U<sub>i</sub> -> u<sub>i</sub> e sostituiamo i terminali.
+
+### Cap 2.2 Automi a Pila
+
+Sono potenti automi che hanno a disposizione una pilla pushdown per contenere quantità non limitata di dati. Tra deterministici e non deterministici c'è differenza computazionale.
+
+Automi a pila non deterministici sono computazionalmente equivalenti alle grammatiche context-free.
+
+Una sestupla (Q, $\sum$, $\Gamma$, $\delta$, q<sub>0</sub>, F) dove:
+
+- Q è insieme degli stati
+- $\sum$ è alfabeto dell'input
+- $\delta$ è funzione transizione Qx$\sum$<sub>$\epsilon$</sub> x$\Gamma$<sub>$\epsilon$</sub>  -> P(Qx$\Gamma$<sub>$\epsilon$</sub> )
+- S è stato iniziale
+- q<sub>0</sub> è stato iniziale
+- F è insieme degli stati accettanti
+
+Nel diagramma di stato si scrive a,b -> c che vuol dire
+
+- legge input a
+- toglie b dalla cima della pila
+- scrive c sulla pila
+
+Se a è vuoto, può leggere e scrivere sulla pila senza input
+Se b è vuoto, può scrivere senza togliere dalla pila
+Se c è vuoto, può togliere dalla pila senza scrivere
