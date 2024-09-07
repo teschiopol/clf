@@ -72,6 +72,16 @@ Se un linguaggio è context-free, allora esiste un automa a pila che lo riconosc
 
 Dobbiamo realizzare una pila che dato un input, riuscirà a generarlo. Alla fine li confronteremo e accetteremo se uguali.
 Per farlo lavoreremo sulle stringhe intermedie generate ad ogni derivazione. Quindi distinguiamo il comportamento in base a se troviamo una variabile o un terminale sulla cima della pila.
+
+1) Inserisce simbolo marcato $ e la prima variabile nella pila
+2) Se sulla cima della pila c'è A, scegli non deterministicamente una regola per A e sostituisce con la parte destra di A
+3) Se sulla cima della pila c'è terminale a, legge l'input e lo confronta. Se sono uguali, ripete. Se sono diversi, rifiuta su questo ramo
+4) Se sulla cima c'è il simbolo $, entra nello stato accettante. L'input è stato completamente letto
+5) Ripete dal punto 2
+
+Nuova notazione (r, u) $\in$ $\delta$(q, a, s)
+Siamo nello stato q, leggiamo a dal input, s è nella cima della pila. Andremo allo stato r e nella pila sostituiremo s con u.
+
 ___
 
 Se un linguaggio è riconosciuto da un automa a pila, allora è context-free.
