@@ -91,3 +91,28 @@ ___
 Se un linguaggio è riconosciuto da un automa a pila, allora è context-free.
 
 ```Convertiamo da PDA a CFG```
+
+G dovrebbe generare una stringa, se quella stringa fa andare P da uno stato iniziale ad accettante.
+
+Ideare una variabile A<sub>pq</sub> che porta la pila da p a q, nello stesso stato.
+
+Il PDA sarà
+
+- unico stato accettante
+- svuota la pila prima di accettare
+- una transizione o push o pop
+
+___
+
+Ogni linguaggio regolare è context-free.
+Questo perché un linguaggio regolare è riconosciuto da un automa finito. Quest'ultimo è un automa a pila che ignora la sua pila.
+
+### Cap 2.3 Linguaggi non Context-Free
+
+#### Pumping Lemma
+
+Se A è linguaggio context-free, allora esiste un numero p tale che, se s è una stringa in A di lunghezza almeno p, può essere divisa in cinque parti s = uvxyz:
+
+1) per ogni i >= 0, uv<sup>i</sup>xy<sup>i</sup>z $\in$ A
+2) |vy| > 0
+3) |vxy| <= p
