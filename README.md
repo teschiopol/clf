@@ -61,3 +61,19 @@ Nel diagramma di stato si scrive a,b -> c che vuol dire
 Se a è vuoto, può leggere e scrivere sulla pila senza input
 Se b è vuoto, può scrivere senza togliere dalla pila
 Se c è vuoto, può togliere dalla pila senza scrivere
+
+#### Equivalenza con le grammatiche context-free
+
+Un linguaggio è context-free se e solo se esiste un automa a pila che lo riconosce.
+
+Se un linguaggio è context-free, allora esiste un automa a pila che lo riconosce.
+
+```Convertiamo da una CFG G a un PDA P```
+
+Dobbiamo realizzare una pila che dato un input, riuscirà a generarlo. Alla fine li confronteremo e accetteremo se uguali.
+Per farlo lavoreremo sulle stringhe intermedie generate ad ogni derivazione. Quindi distinguiamo il comportamento in base a se troviamo una variabile o un terminale sulla cima della pila.
+___
+
+Se un linguaggio è riconosciuto da un automa a pila, allora è context-free.
+
+```Convertiamo da PDA a CFG```
