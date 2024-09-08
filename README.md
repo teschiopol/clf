@@ -256,3 +256,17 @@ Test del vuoto. {\<A\> | A è un DFA e L(A) = $\varnothing$}
 2) Ripete finché non sono marcati nuovi stati:
 3) Marca uno stato che ha una transizione proveniente da uno stato già marcato
 4) Se nessuno stato di accettazione è marcato, accetta. Altrimenti rifiuta.
+
+##### EQ<sub>DFA</sub> è decidibile
+
+Costruiamo linguaggio L(C) = (L(A) interseca $\overline{L(B)}$ ) U ($\overline{L(A)}$ interseca L(B))
+
+Solo stringhe riconosciute da A o da B, differenza simmetrica.
+
+Se L(C) è vuoto allora L(A) e L(B) sono uguali.
+
+1) Costruiamo DFA C
+2) Eseguiamo TM di E su input C
+3) Accetta, se accetta. Altrimenti rifiuta.
+
+#### Problemi decidibili relativi a linguaggi context-free
