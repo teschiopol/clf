@@ -145,3 +145,13 @@ Una setupla (Q, $\sum$, $\Gamma$, $\delta$, q<sub>0</sub>, q<sub>accept</sub>, q
 - q<sub>0</sub> è stato iniziale
 - q<sub>accept</sub> è stato di accettazione
 - q<sub>reject</sub> è stato di rifiuto
+
+La configurazione è lo stato della macchina durante la computazione, composto dalla posizione della testina e della situazione del nastro.
+
+La configurazione C<sub>1</sub> produce la configurazione C<sub>2</sub> se la MdT passa tra le due in un unico passo.
+
+Un linguaggio è <strong>Turing-riconoscibile</strong> se esiste una MdT che lo riconosce.
+
+L'insieme delle stringhe che M accetta rappresenta il linguaggio riconosciuto da M.
+
+Una stringa è accettata se produce una serie di configurazioni che terminano in uno stato di accettazione.
