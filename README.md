@@ -211,3 +211,7 @@ Il decimo è verificare con un algoritmo se un polinomio ha una radice intera.
 Riuscire a dimostrare l'esistenza o meno di un algoritmo, avendo però definito formalmente cos'è un algoritmo.
 
 La tesi di Church-Turing dimostra il collegamento tra una nozione intuitiva e una definizione formale, di algoritmo.
+
+Noi proviamo a verificare se è Turing-riconoscibile cercando una radice su un polinomio a singola variabile. Esso può diventare decidibile definendo poi i limiti entro il quale deve terminare. Questo modo però per trovare i limiti non è applicabile nel caso di più variabili. Ecco perché l'algoritmo del problema non esiste.
+
+#### Terminologia per la descrizione di MdT
