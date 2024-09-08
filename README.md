@@ -278,3 +278,13 @@ Per essere sicuri sia un decisore trasformiamo nella forma di Chomsky, cos' avre
 1) Convertiamo G in una grammatica equivalente in forma normale di Chomsky
 2) Lista tutte le derivazioni di 2n-1 passi o un passo se n=0
 3) Se una di queste genera w, accetta. Altrimenti rifiuta.
+
+##### E<sub>CFG</sub> è decidibile
+
+Non possiamo usare teorema precedente dato che ci possono essere infinite w.
+Partiamo quindi al contrario cercando tutte le variabili che generano stringhe di terminali.
+
+1) Marca tutti i terminali di G
+2) Ripete finché nessuna nuova variabile viene marcata:
+3) Marca una variabile A che ha la regola in G, A -> U<sub>1</sub>U<sub>2</sub>U<sub>n</sub> dove ogni simbolo è già stato marcato.
+4) Se la variabile iniziale non è segnata, accetta. Altrimenti rifiuta.
