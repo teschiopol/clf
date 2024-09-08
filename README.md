@@ -318,3 +318,7 @@ Essendo però riconoscibile, dimostra che i riconoscitori sono più potenti dei 
 Macchina universale U che cicla su M se M cicla su w.
 
 #### Il metodo della diagonalizzazione
+
+Serve a dimostrare l'indecidibilità di A<sub>TM</sub>.
+
+Funzione iniettiva e suriettiva è detta biettiva: per ogni elemento di B esiste un solo elemento di A. Ogni elemento di A è mappato in unico elemento in B. Se tale funzione esiste, A e B hanno la stessa cardinalità.
