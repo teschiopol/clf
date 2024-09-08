@@ -273,7 +273,7 @@ Se L(C) è vuoto allora L(A) e L(B) sono uguali.
 
 ##### A<sub>CFG</sub> è decidibile
 
-Per essere sicuri sia un decisore trasformiamo nella forma di Chomsky, cos' avremo al massimo 2n -1 passi dove n è la lunghezza di w.
+Per essere sicuri sia un decisore trasformiamo nella forma di Chomsky, così avremo al massimo 2n-1 passi dove n è la lunghezza di w. TM S
 
 1) Convertiamo G in una grammatica equivalente in forma normale di Chomsky
 2) Lista tutte le derivazioni di 2n-1 passi o un passo se n=0
@@ -288,3 +288,25 @@ Partiamo quindi al contrario cercando tutte le variabili che generano stringhe d
 2) Ripete finché nessuna nuova variabile viene marcata:
 3) Marca una variabile A che ha la regola in G, A -> U<sub>1</sub>U<sub>2</sub>U<sub>n</sub> dove ogni simbolo è già stato marcato.
 4) Se la variabile iniziale non è segnata, accetta. Altrimenti rifiuta.
+
+##### EQ<sub>CFG</sub> non è decidibile
+
+Questo perché la classe dei linguaggi context-free non è chiusa rispetto a complemento o intersezione.
+
+##### Ogni linguaggio context-free è decidibile
+
+A è un CFL.
+
+G una CFG per A, progettiamo una TM M che decide A.
+
+Creiamo una copia di G in M. Su input w
+
+1) Esegue TM S su G, w
+2) Se S accetta, accetta. Altrimenti rifiuta.
+
+Turing-riconoscibili
+Decidibili
+Context-free
+Regolari
+
+### Cap 4.2 Indecidibilità
