@@ -48,7 +48,7 @@ Una sestupla (Q, $\sum$, $\Gamma$, $\delta$, q<sub>0</sub>, F) dove:
 - Q è insieme degli stati
 - $\sum$ è alfabeto dell'input
 - $\delta$ è funzione transizione Qx$\sum$<sub>$\epsilon$</sub> x$\Gamma$<sub>$\epsilon$</sub>  -> P(Qx$\Gamma$<sub>$\epsilon$</sub> )
-- S è stato iniziale
+- $\Gamma$ è alfabeto della pila
 - q<sub>0</sub> è stato iniziale
 - F è insieme degli stati accettanti
 
@@ -124,3 +124,24 @@ Alcuni linguaggi non context-free:
 - ww | w $\in$ {0, 1}<sup>*</sup> -> usando 0<sup>p</sup>1<sup>p</sup>0<sup>p</sup>1<sup>p</sup>
 
 ## Cap 3 - La tesi di Church-Turing
+
+### Cap 3.1 Macchine di Turing
+
+Simile ad un automa, memoria illimitata.
+
+- Può sia scrivere sia leggere sul nastro
+- La testina si muove a destra e sinistra
+- Nastro è infinito
+- Gli stati di accettazione e rifiuto sono immediati
+
+#### Definizione formale di macchina di Turing
+
+Una setupla (Q, $\sum$, $\Gamma$, $\delta$, q<sub>0</sub>, q<sub>accept</sub>, q<sub>reject</sub>) dove:
+
+- Q è insieme degli stati
+- $\sum$ è alfabeto dell'input senza simbolo blank
+- $\delta$ è funzione transizione Qx$\Gamma$ -> P(Qx$\Gamma$x{L, R} )
+- $\Gamma$ è alfabeto del nastro con blank
+- q<sub>0</sub> è stato iniziale
+- q<sub>accept</sub> è stato di accettazione
+- q<sub>reject</sub> è stato di rifiuto
