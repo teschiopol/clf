@@ -374,3 +374,5 @@ Se A è riducibile a B, e A è indecidibile allora anche B lo è.
 Problema della fermata, decidere se una MdT si ferma dato un input.
 
 ##### HALT<sub>TM</sub> è indecidibile
+
+Per assurdo supponiamo che è decidibile e dimostriamo che A<sub>TM</sub> è riducibile a HALT<sub>TM</sub>.
