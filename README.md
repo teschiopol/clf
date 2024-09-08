@@ -358,3 +358,19 @@ M<sub>1</sub> riconosce A e M<sub>2</sub> riconosce $\overline{A}$, M è decisor
 2) Se M<sub>1</sub> accetta, accetta; se M<sub>2</sub> accetta, rifiuta.
 
 Dato che M si ferma se una delle due macchine accetta, è un decisore. Inoltre accetta solo le stringhe di A, altrimenti respinge, quindi è un decisore per A, ed A è decidibile.
+
+##### $\overline{A~TM~}$ non è turing-riconoscibile
+
+Questo perché A<sub>TM</sub> è riconoscibile e abbiamo visto essere non decidibile, quindi $\overline{A~TM~}$ non può essere coTuring riconoscibile.
+
+## Cap 5 - Riducibilità
+
+Ridurre un problema in modo che risolvendo il secondo, si abbia anche una soluzione al primo.
+
+Se A è riducibile a B, e A è indecidibile allora anche B lo è.
+
+### Cap 5.1 Problemi indecidibili dalla teoria dei linguaggi
+
+Problema della fermata, decidere se una MdT si ferma dato un input.
+
+##### HALT<sub>TM</sub> è indecidibile
