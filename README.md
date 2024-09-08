@@ -167,3 +167,15 @@ Ogni linguaggio decidibile è Turing-riconoscibile.
 Descrizione di come si muove la testina, dei controlli che fa sullo stato che è ed eventuali sostituzioni.
 
 ### Cap 3.2 Varianti di macchine di Turing
+
+Sono delle varianti che non vanno però a modificare la classe di linguaggi riconosciuti o aumentare il potere computazionale.
+
+#### Macchina di Turing multinastro
+
+Inizialmente solo nastro 1 ha input, gli altri vuoti. Ogni testina è su un nastro.
+
+Ogni macchina multinastro ha una MdT a nastro singolo equivalente.
+
+Lo si fa usando il simbolo # per delimitare l'inizio e la fine dei nastri, inoltre si aggiunge il simbolo puntato per identificare la testina virtuale dei vari nastri.
+
+#### Macchina di Turing non deterministica
