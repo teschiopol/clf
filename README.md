@@ -322,3 +322,26 @@ Macchina universale U che cicla su M se M cicla su w.
 Serve a dimostrare l'indecidibilità di A<sub>TM</sub>.
 
 Funzione iniettiva e suriettiva è detta biettiva: per ogni elemento di B esiste un solo elemento di A. Ogni elemento di A è mappato in unico elemento in B. Se tale funzione esiste, A e B hanno la stessa cardinalità.
+
+Insieme R dei numeri reali non è numerabile.
+
+L'insieme dei linguaggi è non numerabile, mentre l'insieme delle MdT si. Quindi alcuni linguaggi non sono ne decidibili ne turing-riconoscibili.
+
+#### Un linguaggio indecidibile
+
+Dimostriamo per assurdo, usando un decisore H che si ferma su M.
+
+- Accetta se M accetta w
+- Rifiuta se M non accetta w
+
+Costruiamo una MT D che chiama H per determinare M.
+
+- Esegue H su input \<M, \<M\> \>
+- Accetta se H rifiuta, rifiuta se H accetta
+
+Se provassimo D(\<D\>) avremmo
+
+- Accetta se D non accetta
+- Rfiuta se D non rifiuta
+
+Ovviamente una contraddizione. Quindi ne D ne H possono esistere.
