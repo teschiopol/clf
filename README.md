@@ -163,3 +163,7 @@ Un linguaggio è <strong>Turing-decidibile</strong> se esiste una MdT che lo dec
 Ogni linguaggio decidibile è Turing-riconoscibile.
 
 #### Esempi di macchine di Turing
+
+Descrizione di come si muove la testina, dei controlli che fa sullo stato che è ed eventuali sostituzioni.
+
+### Cap 3.2 Varianti di macchine di Turing
