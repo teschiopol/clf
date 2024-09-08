@@ -345,3 +345,5 @@ Se provassimo D(\<D\>) avremmo
 - Rfiuta se D non rifiuta
 
 Ovviamente una contraddizione. Quindi ne D ne H possono esistere.
+
+#### Un linguaggio non Turing-riconoscibile
