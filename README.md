@@ -241,3 +241,18 @@ M decide A<sub>DFA</sub>:
 Trasformiamo l'NFA in un DFA equivalente C.
 Eseguiamo C su M.
 Accetta, se accetta. Altrimenti rifiuta.
+
+##### A<sub>REX</sub> è decidibile
+
+Converte in un NFA equivalente.
+Esegue su N.
+Accetta, se accetta. Altrimenti rifiuta.
+
+##### E<sub>DFA</sub> è decidibile
+
+Test del vuoto. {\<A\> | A è un DFA e L(A) = $\varnothing$}
+
+1) Marca stato iniziale di A
+2) Ripete finché non sono marcati nuovi stati:
+3) Marca uno stato che ha una transizione proveniente da uno stato già marcato
+4) Se nessuno stato di accettazione è marcato, accetta. Altrimenti rifiuta.
