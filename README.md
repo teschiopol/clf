@@ -203,3 +203,11 @@ La TM esegue l'input e lo confronta con E. Se appare, accetta.
 E invece ignora l'input ed esegue M su ogni stringa. Se M accetta, E stampa la stringa.
 
 ### Cap 3.3 Definizione di algoritmo
+
+#### I problemi di Hilbert
+
+Il decimo è verificare con un algoritmo se un polinomio ha una radice intera.
+
+Riuscire a dimostrare l'esistenza o meno di un algoritmo, avendo però definito formalmente cos'è un algoritmo.
+
+La tesi di Church-Turing dimostra il collegamento tra una nozione intuitiva e una definizione formale, di algoritmo.
