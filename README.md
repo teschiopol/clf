@@ -235,3 +235,9 @@ M decide A<sub>DFA</sub>:
 1) Su input <B, w> dove B è un DFA e w è una stringa
 2) Simula B su w
 3) Se la simulazione termina in uno stato di accettazione, accetta. Se non termina in uno stato di accettazione, rifiuta.
+
+##### A<sub>NFA</sub> è decidibile
+
+Trasformiamo l'NFA in un DFA equivalente C.
+Eseguiamo C su M.
+Accetta, se accetta. Altrimenti rifiuta.
