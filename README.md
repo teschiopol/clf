@@ -310,3 +310,11 @@ Context-free
 Regolari
 
 ### Cap 4.2 Indecidibilità
+
+##### A<sub>TM</sub> non è decidibile
+
+Essendo però riconoscibile, dimostra che i riconoscitori sono più potenti dei decisori.
+
+Macchina universale U che cicla su M se M cicla su w.
+
+#### Il metodo della diagonalizzazione
