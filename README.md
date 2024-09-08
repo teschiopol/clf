@@ -347,3 +347,14 @@ Se provassimo D(\<D\>) avremmo
 Ovviamente una contraddizione. Quindi ne D ne H possono esistere.
 
 #### Un linguaggio non Turing-riconoscibile
+
+Se un linguaggio ed il suo complemento sono turing-riconoscibili, allora è decidibile.
+
+Se un linguaggio è decidibile allora è riconoscibile. Il complemento di un linguaggio decidibile è anch'esso decidibile.
+
+M<sub>1</sub> riconosce A e M<sub>2</sub> riconosce $\overline{A}$, M è decisore per A.
+
+1) Esegue sia M<sub>1</sub> sia M<sub>2</sub> su w in parallelo
+2) Se M<sub>1</sub> accetta, accetta; se M<sub>2</sub> accetta, rifiuta.
+
+Dato che M si ferma se una delle due macchine accetta, è un decisore. Inoltre accetta solo le stringhe di A, altrimenti respinge, quindi è un decisore per A, ed A è decidibile.
