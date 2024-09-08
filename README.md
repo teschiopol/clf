@@ -195,3 +195,11 @@ Questo per evitare loop su un cammino infinito.
 N può diventare un decisore se si fermasse su ogni input di ogni ramificazione.
 
 #### Enumeratori
+
+Ha una stampante collegata, che genera un output delle stringhe che compongono il linguaggio.
+
+La TM esegue l'input e lo confronta con E. Se appare, accetta.
+
+E invece ignora l'input ed esegue M su ogni stringa. Se M accetta, E stampa la stringa.
+
+### Cap 3.3 Definizione di algoritmo
