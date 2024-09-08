@@ -140,7 +140,7 @@ Una setupla (Q, $\sum$, $\Gamma$, $\delta$, q<sub>0</sub>, q<sub>accept</sub>, q
 
 - Q è insieme degli stati
 - $\sum$ è alfabeto dell'input senza simbolo blank
-- $\delta$ è funzione transizione Qx$\Gamma$ -> P(Qx$\Gamma$x{L, R} )
+- $\delta$ è funzione transizione Qx$\Gamma$ -> Qx$\Gamma$x{L, R}
 - $\Gamma$ è alfabeto del nastro con blank
 - q<sub>0</sub> è stato iniziale
 - q<sub>accept</sub> è stato di accettazione
@@ -179,3 +179,19 @@ Ogni macchina multinastro ha una MdT a nastro singolo equivalente.
 Lo si fa usando il simbolo # per delimitare l'inizio e la fine dei nastri, inoltre si aggiunge il simbolo puntato per identificare la testina virtuale dei vari nastri.
 
 #### Macchina di Turing non deterministica
+
+Avrà una funzione di transizione
+
+Qx$\Gamma$ -> P(Qx$\Gamma$x{L, R})
+
+Ogni macchina di Turing non deterministica ha una MdT deterministica equivalente.
+
+Si esegue un approccio di ricerca ad albero in ampiezza. La MdT D avrà 3 nastri con input, copia di N, stato di D rispetto all'esplorazione su N.
+
+Quindi il nastro 3 avrà la scelta successiva del passo. Se vuota o non valida, resetta con la stringa successiva del cammino.
+
+Questo per evitare loop su un cammino infinito.
+
+N può diventare un decisore se si fermasse su ogni input di ogni ramificazione.
+
+#### Enumeratori
