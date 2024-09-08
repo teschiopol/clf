@@ -155,3 +155,11 @@ Un linguaggio è <strong>Turing-riconoscibile</strong> se esiste una MdT che lo 
 L'insieme delle stringhe che M accetta rappresenta il linguaggio riconosciuto da M.
 
 Una stringa è accettata se produce una serie di configurazioni che terminano in uno stato di accettazione.
+
+Le MdT che si fermano su ogni input sono dette decisori, in quanto decidono se accettare o rifiutare, non ciclano mai. Un decisore decide un linguaggio se riconosce tale linguaggio.
+
+Un linguaggio è <strong>Turing-decidibile</strong> se esiste una MdT che lo decide.
+
+Ogni linguaggio decidibile è Turing-riconoscibile.
+
+#### Esempi di macchine di Turing
