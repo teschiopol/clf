@@ -215,3 +215,23 @@ La tesi di Church-Turing dimostra il collegamento tra una nozione intuitiva e un
 Noi proviamo a verificare se è Turing-riconoscibile cercando una radice su un polinomio a singola variabile. Esso può diventare decidibile definendo poi i limiti entro il quale deve terminare. Questo modo però per trovare i limiti non è applicabile nel caso di più variabili. Ecco perché l'algoritmo del problema non esiste.
 
 #### Terminologia per la descrizione di MdT
+
+Descriviamo l'input della macchina, che è spesso una stringa o trasformato in tale. Verifichiamo in caso che sia nella forma corretta.
+
+## Cap 4 - Decidibilità
+
+### Cap 4.1 Linguaggi decidibili
+
+#### Problemi decidibili relativi a linguaggi regolari
+
+Problema dell'accettazione per DFA.
+
+A<sub>DFA</sub> è il linguaggio per indicare se un automa finito deterministico accetta una data stringa.
+
+Esso è decidibile. Quindi verificare il linguaggio è equivalente a verificare la decibilità del problema computazionale.
+
+M decide A<sub>DFA</sub>:
+
+1) Su input <B, w> dove B è un DFA e w è una stringa
+2) Simula B su w
+3) Se la simulazione termina in uno stato di accettazione, accetta. Se non termina in uno stato di accettazione, rifiuta.
