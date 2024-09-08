@@ -270,3 +270,11 @@ Se L(C) è vuoto allora L(A) e L(B) sono uguali.
 3) Accetta, se accetta. Altrimenti rifiuta.
 
 #### Problemi decidibili relativi a linguaggi context-free
+
+##### A<sub>CFG</sub> è decidibile
+
+Per essere sicuri sia un decisore trasformiamo nella forma di Chomsky, cos' avremo al massimo 2n -1 passi dove n è la lunghezza di w.
+
+1) Convertiamo G in una grammatica equivalente in forma normale di Chomsky
+2) Lista tutte le derivazioni di 2n-1 passi o un passo se n=0
+3) Se una di queste genera w, accetta. Altrimenti rifiuta.
