@@ -405,3 +405,12 @@ Se R decide E<sub>TM</sub> allora S dedice A<sub>TM</sub> ma è indecidibile, qu
 - Se R accetta, accetta. se R rifiuta, rifiuta
 
 ##### EQ<sub>TM</sub> è indecidibile
+
+Riduciamo da E<sub>TM</sub>, quindi fissiamo che una delle due TM abbia il linguaggio vuoto.
+
+- Eseguiamo R su (M, M<sub>1</sub>) dove M<sub>1</sub> rifiuta ogni input
+- Se R accetta, allora accetta. Se R rifiuta, rifiuta.
+
+Se R dedice EQ<sub>TM</sub>, S dedice E<sub>TM</sub>. Questo non è possibile.
+
+#### Riduzioni mediante storie di computazione
