@@ -452,3 +452,8 @@ Se esiste una MdT che si ferma avendo solo f(w) sul nastro su input w.
 
 Un linguaggio si dice riducibile mediante funzione, indicato con A <=<sub>m</sub> B, se esiste una funzione calcolabile da $\sum$* -> $\sum$*, dove per ogni w, w $\in$ A sse f(w) $\in$ B.
 f è chiamata riduzione da A a B.
+
+### Cap 6.3 Turing riducibilità
+
+Un oracolo è un dispositivo che riferisce se w appartiene al linguaggio.
+Una MdT con oracolo, può interrogare un oracolo. M<sup>B</sup> oracolo per linguaggio B.
