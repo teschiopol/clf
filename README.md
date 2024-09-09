@@ -385,3 +385,13 @@ Abbiamo R che decide HALT<sub>TM</sub>. Costruiamo S per decidere A<sub>TM</sub>
 - Se M accetta, accetta. Se rifiuta, rifiuta
 
 Se R decide HALT<sub>TM</sub> allora S dedice A<sub>TM</sub> ma è indecidibile, quindi anche HALT<sub>TM</sub> lo è.
+
+##### E<sub>TM</sub> è indecidibile
+
+Qui avremo S che esegue una modifica di M<sub>1</sub>, dove controllo che l'input sia = a w.
+
+- Costruiamo M<sub>1</sub>
+- Esegue R su M<sub>1</sub>
+- Se R accetta, rifiuta. Se R rifiuta, accetta
+
+Se R decide E<sub>TM</sub> allora S dedice A<sub>TM</sub> ma è indecidibile, quindi anche E<sub>TM</sub> lo è.
