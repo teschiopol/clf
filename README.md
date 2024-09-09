@@ -441,3 +441,9 @@ L'unica stringa accettante sarebbe w, quindi M accetta w. Di conseguenza S accet
 ##### ALL<sub>CFG</sub> è indecidibile
 
 Una CFG genera tutte le possibili stringhe.
+
+### Cap 5.3 Riducibilità mediante funzione
+
+#### Funzioni calcolabili
+
+Se esiste una MdT che si ferma avendo solo f(w) sul nastro su input w.
