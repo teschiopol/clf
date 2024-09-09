@@ -447,3 +447,8 @@ Una CFG genera tutte le possibili stringhe.
 #### Funzioni calcolabili
 
 Se esiste una MdT che si ferma avendo solo f(w) sul nastro su input w.
+
+#### Definizione formale di riducibilità mediante funzione
+
+Un linguaggio si dice riducibile mediante funzione, indicato con A <=<sub>m</sub> B, se esiste una funzione calcolabile da $\sum$* -> $\sum$*, dove per ogni w, w $\in$ A sse f(w) $\in$ B.
+f è chiamata riduzione da A a B.
