@@ -376,3 +376,12 @@ Problema della fermata, decidere se una MdT si ferma dato un input.
 ##### HALT<sub>TM</sub> è indecidibile
 
 Per assurdo supponiamo che è decidibile e dimostriamo che A<sub>TM</sub> è riducibile a HALT<sub>TM</sub>.
+
+Abbiamo R che decide HALT<sub>TM</sub>. Costruiamo S per decidere A<sub>TM</sub>.
+
+- Esegue R su (M, 2)
+- Se R rifiuta, rifiuta
+- Se R accetta, simula M su w finchè non si ferma
+- Se M accetta, accetta. Se rifiuta, rifiuta
+
+Se R decide HALT<sub>TM</sub> allora S dedice A<sub>TM</sub> ma è indecidibile, quindi anche HALT<sub>TM</sub> lo è.
