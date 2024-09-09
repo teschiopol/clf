@@ -429,3 +429,15 @@ Il numero di configurazioni è = stati * lunghezza nastro * simboli<sup>n</sup>
 Questo perché altrimenti tornerebbe su una stessa configurazione, andando quindi in ciclo.
 
 ##### E<sub>LBA</sub> è indecidibile
+
+Tramite un LBA. Dove accetta se esiste una configurazione accettante per M, altrimenti rifuta. E ritorna l'opposto.
+
+Cioè se R accetta, vuol dire che insieme vuoto.
+
+Il decisore quindi per A<sub>TM</sub> farebbe l'opposto.
+
+L'unica stringa accettante sarebbe w, quindi M accetta w. Di conseguenza S accetta (M, w) ma non è possibile.
+
+##### ALL<sub>CFG</sub> è indecidibile
+
+Una CFG genera tutte le possibili stringhe.
