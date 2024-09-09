@@ -457,3 +457,7 @@ f è chiamata riduzione da A a B.
 
 Un oracolo è un dispositivo che riferisce se w appartiene al linguaggio.
 Una MdT con oracolo, può interrogare un oracolo. M<sup>B</sup> oracolo per linguaggio B.
+
+Tramite oracolo, E<sub>TM</sub> è decidibile rispetto a A<sub>TM</sub>.
+
+Turing riducibilità: A <=<sub>T</sub> B se A è decidibile rispettto a B.
