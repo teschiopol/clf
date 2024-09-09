@@ -395,3 +395,13 @@ Qui avremo S che esegue una modifica di M<sub>1</sub>, dove controllo che l'inpu
 - Se R accetta, rifiuta. Se R rifiuta, accetta
 
 Se R decide E<sub>TM</sub> allora S dedice A<sub>TM</sub> ma è indecidibile, quindi anche E<sub>TM</sub> lo è.
+
+##### REGULAR<sub>TM</sub> è indecidibile
+
+- Costruiamo M<sub>2</sub>
+- Se x ha forma 0<sup>n</sup>1<sup>n</sup>, accetta
+- Se non ha forma, esegue M e accetta, se accetta
+- Esegue R su M<sub>2</sub>
+- Se R accetta, accetta. se R rifiuta, rifiuta
+
+##### EQ<sub>TM</sub> è indecidibile
