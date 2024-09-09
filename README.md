@@ -414,3 +414,18 @@ Riduciamo da E<sub>TM</sub>, quindi fissiamo che una delle due TM abbia il lingu
 Se R dedice EQ<sub>TM</sub>, S dedice E<sub>TM</sub>. Questo non è possibile.
 
 #### Riduzioni mediante storie di computazione
+
+Una storia di computazione è l'insieme di configurazioni da C<sub>1</sub> a C<sub>l</sub> dove C<sub>l</sub> accetta per M.
+
+Automa linearmente limitato: la testina non si sposta fuori dal input.
+
+##### A<sub>LBA</sub> è decidibile
+
+Il numero di configurazioni è = stati * lunghezza nastro * simboli<sup>n</sup>
+
+- Simula M per qng<sup>n</sup> passi o finchè non si ferma
+- Se M è ferma, accetta se ha accettato. Rifiuta, se ha rifiutato. Se non si è fermata, rifiuta.
+
+Questo perché altrimenti tornerebbe su una stessa configurazione, andando quindi in ciclo.
+
+##### E<sub>LBA</sub> è indecidibile
